@@ -4,48 +4,53 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Added descriptive title -->
     <title>Horiseon Digital Marketing Home Page</title>
 </head>
 
 <body>
+    <!-- Removed confusing formatting of name; changed to semantic html, but kept one div because it helped with alignment. -->
     <header class="header">
-        <h1 id="seo"> Horiseon </h1>
+        <h1 id="menu"> Horiseon </h1>
         <div>
+            <nav>
             <ul>
                 <li>
-                    <a href="#content-headings">Search Engine Optimization</a>
+                    <a href="#search-engine-optimization">Search Engine Optimization</a>
                 </li>
                 <li>
-                    <a href="#content-headings">Online Reputation Management</a>
+                    <a href="#online-reputation-management">Online Reputation Management</a>
                 </li>
                 <li>
-                    <a href="#content-headings">Social Media Marketing</a>
+                    <a href="#social-media-marketing">Social Media Marketing</a>
                 </li>
             </ul>
+        </nav>
         </div>
     </header>
-
+<!-- added alt text attributes to images -->
     <section class="hero" alt="background image of people at a marketing meeting"></section>
    
     <main class="content">
-        <section class="content-headings">
-            <img src="./assets/images/search-engine-optimization.jpg" alt="image of notebook with SEO printed on it"  class="float-left" />
+        <!-- fixed all internal links; tried to streamline some of the css code so it wasn't so repetitive -->
+        <section id="search-engine-optimization" class="content-headings">
+            <img src="./assets/images/search-engine-optimization.jpg" alt="image of notebook with SEO printed on it"  id="float-left" />
             <h2>Search Engine Optimization</h2>
             <br>
             <p>
                 The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
             </p>
         </section>
-        <section class="content-headings">
-            <img src="./assets/images/online-reputation-management.jpg" alt="image of laptop screen with reputation heading" class="float-right" />
+        <section id="online-reputation-management" class="content-headings">
+            <img src="./assets/images/online-reputation-management.jpg" alt="image of laptop screen with reputation heading" id="float-right" />
             <h2>Online Reputation Management</h2>
             <br>
             <p>
                 The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
             </p>
         </section>
-        <section class="content-headings">
-            <img src="./assets/images/social-media-marketing.jpg" alt="image of several social media icons" class="float-left" />
+        <section id="social-media-marketing" class="content-headings">
+            <img src="./assets/images/social-media-marketing.jpg" alt="image of several social media icons" id="float-left" />
             <h2>Social Media Marketing</h2>
             <br>
             <p>
@@ -79,6 +84,7 @@
         </section>
     </summary>
     <footer class="footer">
+        <!-- Changed heading size to be sequential -->
         <h4>Made with ❤️️ by Horiseon</h4>
         <p>
             &copy; 2019 Horiseon Social Solution Services, Inc.
